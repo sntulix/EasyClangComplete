@@ -1,0 +1,20 @@
+{
+  "body": [
+    {
+      "pattern": "<details>",
+      "message": "You need to provide a log in details html tags"
+    },
+  ],
+  "head.ref": [
+    {
+      "pattern": "^(dev)/",
+      "message": "Please make sure you are mergin into 'dev'"
+    }
+  ],
+  "additions": [
+    {
+      "pattern": "0|^[1-9]$|^[1-9]\\d$",
+      "message": "Your PR is too big (over 99 additions)"
+    }
+  ],
+}
