@@ -151,7 +151,7 @@ class CompilationDb(FlagsSource):
         import json
         data = None
         with open(current_db_path) as data_file:
-            data = json.load(data_file)
+            data = json.load(data_file, 'utf-8')
         if not data:
             return None
         parsed_db = {}
